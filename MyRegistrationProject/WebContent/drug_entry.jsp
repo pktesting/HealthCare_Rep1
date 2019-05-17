@@ -13,7 +13,7 @@
 				<h1>Drug Entry</h1>
 			</tr>
 		</table>
-		<form action="">
+		<form action="DrugStoreController" method="post">
 			<table>
 				<tr>
 					<td><b>Drug Name:</b></td>
@@ -26,11 +26,11 @@
 				
 				<tr>
 					<td><b>Expiry Date1:</b></td>
-					<td><input type="text" name="edate1" placeholder="eg. mm/YYYY"></td>
+					<td><input type="date" name="edate1" placeholder="eg. mm/YYYY"></td>
 				</tr>
 				<tr>
 					<td><b>Expiry Date2:</b></td>
-					<td><input type="text" name="edate2" placeholder="eg. mm/YYYY"></td>
+					<td><input type="date" name="edate2" placeholder="eg. mm/YYYY"></td>
 				</tr>
 				
 				
