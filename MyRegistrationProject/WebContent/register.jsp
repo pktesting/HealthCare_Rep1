@@ -28,8 +28,8 @@
 				</tr>
 				<tr>
 					<td><b>Sex:</b></td>
-					<td><input type="radio" name="sex[]" value="Male">Male</td>
-					<td><input type="radio" name="sex[]" value="Female">Female</td>
+					<td><input type="radio" name="sex" value="Male">Male</td>
+					<td><input type="radio" name="sex" value="Female">Female</td>
 				</tr>
 				<tr>
 					<td><b>Phone Number:</b></td>
@@ -44,33 +44,17 @@
 				</tr>
 				<tr>
 					<td><b>Departments:</b></td>
-					<td><input type="radio" name="dept[]" value="emergency">Emergency</td>
-					<td><input type="radio" name="dept[]" value="normal">Normal</td>
+					<td><input type="radio" name="dept" value="emergency">Emergency</td>
+					<td><input type="radio" name="dept" value="normal">Normal</td>
 				</tr>
 				<tr>
 					<td><b>Patient As:</b></td>
-					<td><input type="radio" name="patient[]" id="stu" value="0"
+					<td><input type="radio" name="patient" id="stu" value="0"
 						onclick="ShowHideDiv()">Student</td>
-					<td><input type="radio" name="patient[]" id="emp" value="1"
+					<td><input type="radio" name="patient" id="emp" value="1"
 						onclick="ShowHideDiv()">Employee</td>
 				</tr>
-				<tr>
-				<td>
-				<div id="dv" style="display: none;">
-				<table>
-				<tr>
-					<td><b>Beneficiarie Name:</b></td>
-					<td><input type="text" id="beneficiarieName" name="beneficiarieName"><br></td>
-					</tr>
-					
-					<tr>
-					<td><b>Relation:</b></td>
-					<td><input type="text" id="beneficiarieRelation" name="beneficiarieRelation"></td>
-					</tr>
-				</table>
-				</div>
-				</td>
-				</tr>
+				
 				<tr>
 					<td><b>Password:</b></td>
 					<td><input type="password" name="pass"></td>
@@ -91,10 +75,3 @@
 	</center>
 </body>
 </html>
-<script>
-	function ShowHideDiv() {
-		var chkEmp = document.getElementById("emp");
-		var dv= document.getElementById("dv");
-		dv.style.display = chkEmp.checked ? "block" : "none";
-	}
-</script>

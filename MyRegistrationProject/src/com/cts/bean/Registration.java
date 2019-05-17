@@ -5,17 +5,19 @@ public class Registration {
 	private int age;
 	private String sex;
 	private String email;
-	private int phone;
+	private String phone;
 	private String address;
 	private String dept;
 	private String patient;
-	private String beneficiarieName;
-	private String beneficiarieRelation;
 	private String pass;
 	private String retype;
 	
-	public Registration(String name, int age, String sex, String email, int phone, String address, String dept,
-			String patient, String beneficiarieName, String beneficiarieRelation, String pass, String retype) {
+	public Registration() {
+		super();
+	}
+
+	public Registration(String name, int age, String sex, String email, String phone, String address, String dept,
+			String patient, String pass, String retype) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -25,16 +27,8 @@ public class Registration {
 		this.address = address;
 		this.dept = dept;
 		this.patient = patient;
-		this.beneficiarieName = beneficiarieName;
-		this.beneficiarieRelation = beneficiarieRelation;
 		this.pass = pass;
 		this.retype = retype;
-	}
-
-	public Registration(String name2, int age2, String sex2, String email2, int phone2, String address2, String dept2,
-			String patient2, Object beneficiarieName2, Object beneficiarieRelation2, String password,
-			String repassword) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -69,11 +63,11 @@ public class Registration {
 		this.email = email;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -101,22 +95,6 @@ public class Registration {
 		this.patient = patient;
 	}
 
-	public String getBeneficiarieName() {
-		return beneficiarieName;
-	}
-
-	public void setBeneficiarieName(String beneficiarieName) {
-		this.beneficiarieName = beneficiarieName;
-	}
-
-	public String getBeneficiarieRelation() {
-		return beneficiarieRelation;
-	}
-
-	public void setBeneficiarieRelation(String beneficiarieRelation) {
-		this.beneficiarieRelation = beneficiarieRelation;
-	}
-
 	public String getPass() {
 		return pass;
 	}
@@ -132,12 +110,9 @@ public class Registration {
 	public void setRetype(String retype) {
 		this.retype = retype;
 	}
-
-//	public boolean addCustomer(Registration registration) {
-//		// TODO Auto-generated method stub
-//		return false;
-//	}
-
+	
+	
+	
 	
 	
 	
